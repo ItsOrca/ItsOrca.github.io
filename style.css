@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: #000000;
+    opacity: 0.8;
+    background: repeating-linear-gradient(45deg, #070e2d, #070e2d 5px, #000000 5px, #000000 25px);
+    background-image: radial-gradient(circle, #92a8d1 10%, transparent 10%), radial-gradient(circle, #dbe2ef 10%, transparent 10%);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    background-color: #c0d4fa;
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+
+/* General style for .click-info inside .info of various IDs, hence the <div class="info" id="Blue-info"> */
+#Blue .click-info,
+#Dehma .click-info,
+#Dan .click-info,
+#Ash .click-info,
+#Me .click-info,
+#Scuffy .click-info,
+#Freq .click-info,
+#CJ .click-info,
+#Early .click-info,
+#Noriszetig .click-info,
+#Geek .click-info {
+    font-size: 14px;
+    color: gray;
+}
+
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+
+/* Changes how the text styles, etc. under the titles */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    border: 1px solid black;
+    padding: 10px;
+    color: #000000;
+    margin: 10px;
+}
+
+
+/* Hovering on the Titles changes the cursor */
+.clickable {
+    cursor: pointer;
+    border: 1px solid #D6E4F0;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #92a8d1;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Combined transitions */
+}
+
+.clickable:hover {
+    background-color: #dbe2ef;
+    transform: translateY(-3px); /* Adjusted the translate value */
+}
+
+.info {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    background-color: #92a8d1;
+    border: 1px solid #92a8d1;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 14px;
+}
